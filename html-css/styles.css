@@ -1,0 +1,18 @@
+.paragraph {
+  color: red;
+  background: yellow;
+  text-align: center;
+}
+
+#paragraph-1 {
+  color: blue;
+}
+
+form {
+  color: blue;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
