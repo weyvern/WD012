@@ -1,7 +1,9 @@
 const form = document.getElementById('form');
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  const userInput = e.target[0].value;
+
+form.addEventListener('submit', event => {
+  console.log(event);
+  event.preventDefault();
+  const userInput = event.target[0].value;
   if (userInput) {
     console.log(userInput);
     // Add your todo
