@@ -1,0 +1,70 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.slot {
+  position: relative;
+  display: inline-block;
+  height: 100px;
+  width: 80px;
+}
+
+section {
+  position: absolute;
+  border-radius: 15px !important;
+  border: 3px solid black !important;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  background-color: grey;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+  cursor: default;
+}
+
+.container {
+  position: absolute;
+  top: 2px;
+  width: 100%;
+  transition: top ease-in-out 0.5s;
+  text-align: center;
+}
+
+.roll {
+  width: 215px;
+  cursor: pointer;
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+.rolling {
+  animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: #000;
+  }
+  49% {
+    color: #000;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #000;
+  }
+}
